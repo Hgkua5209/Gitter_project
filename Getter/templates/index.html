@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            table,tr,td {
+                border: 1pt solid;
+                margin-left: 600;
+                margin-top: 200;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Student Information</h3>
+        <table>
+            <tr>
+                <td>
+                    studentId
+                </td>
+                <td>
+                    studentName
+                </td>
+                <td>
+                    studentPhone
+                </td>
+            </tr> 
+            {% for x in Stud %}
+            <tr>
+                <td>
+                    {{ x.studentId  }}
+                </td>
+                <td>
+                    {{ x.studentName  }}
+                </td>
+                <td>
+                    {{ x.studentPhone }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
